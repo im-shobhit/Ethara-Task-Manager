@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const api = axios.create({
   // Make sure there is NO trailing slash at the end!
-const API_URL = 'https://ethara-task-manager.onrender.com'; 
+    baseURL: 'https://ethara-task-manager.onrender.com'
 });
 
 api.interceptors.request.use((config) => {
